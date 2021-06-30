@@ -1,0 +1,32 @@
+.grid-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  background-color: whitesmoke;
+}
+
+.square:hover {
+  background-color: yellowgreen;
+}
+
+.grid-buttons-container {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  align-self: start;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.speed-input {
+  margin-top: 0.7rem;
+}
+
+.welcome-button-container {
+  margin-top: 2rem;
+}

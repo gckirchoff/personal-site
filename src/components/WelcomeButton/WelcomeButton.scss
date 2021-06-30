@@ -1,0 +1,16 @@
+.welcome-button {
+  position: relative;
+  cursor: pointer;
+}
+
+.welcome-button-text {
+  position: absolute;
+  z-index: 100;
+  left: 57%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  pointer-events: none;
+}

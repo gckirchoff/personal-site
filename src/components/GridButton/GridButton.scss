@@ -1,0 +1,13 @@
+.grid-button {
+  border: none;
+  padding: 0.8rem 1.28rem;
+  background-image: linear-gradient(to right bottom, orchid, mediumorchid);
+  color: whitesmoke;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 100px;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}

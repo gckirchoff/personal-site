@@ -1,0 +1,54 @@
+.grid-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  background-color: #15202b;
+  border: 1px solid mediumorchid;
+  border-radius: 3px;
+}
+
+.square:hover {
+  color: rgb(87, 172, 144);
+  background-color: gray;
+  border: 1px solid rgba(241, 255, 255, 0.9);
+}
+
+.grid-menu-container {
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  margin-top: 1rem;
+}
+
+.grid-buttons-container {
+  align-self: start;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.speed-input {
+  margin-top: 0.7rem;
+}
+
+.welcome-button-container {
+  margin-top: 2rem;
+}
+
+.link,
+.link:hover,
+.link:focus,
+.link:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.explanation {
+  cursor: pointer;
+  text-decoration: underline;
+}
