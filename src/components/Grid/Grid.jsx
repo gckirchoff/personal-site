@@ -239,7 +239,7 @@ const Grid = ({ numRows, numCols, gridViewWidthPercent }) => {
   //   State
   const [running, setRunning] = useState(false);
   const [grid, setGrid] = useState(() => createFirstGrid());
-  const [speed, setSpeed] = useState(0.05);
+  const [speed, setSpeed] = useState(0.08);
   const [showModal, setShowModal] = useState(false);
 
   const createRandomGrid = () => {
@@ -380,7 +380,7 @@ const Grid = ({ numRows, numCols, gridViewWidthPercent }) => {
           to="about"
           className="link"
         >
-          <WelcomeButton />
+          <GridButton content="See more..." big />
         </DelayLink>
       </div>
     </div>
