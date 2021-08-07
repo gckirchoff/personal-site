@@ -5,6 +5,7 @@ import WelcomeButton from '../WelcomeButton/WelcomeButton';
 import GridButton from '../GridButton/GridButton';
 import DelayLink from '../utilities/DelayLink';
 import GridModal from '../GridModal/GridModal';
+import { AnimatePresence } from 'framer-motion';
 
 // const numRows = 3;
 // const numCols = 15;
@@ -241,6 +242,7 @@ const Grid = ({ numRows, numCols, gridViewWidthPercent }) => {
   const [grid, setGrid] = useState(() => createFirstGrid());
   const [speed, setSpeed] = useState(0.08);
   const [showModal, setShowModal] = useState(false);
+  const [showSeeMoreButton, setShowSeeMoreButton] = useState(true);
 
   const createRandomGrid = () => {
     const rows = [];
@@ -299,13 +301,16 @@ const Grid = ({ numRows, numCols, gridViewWidthPercent }) => {
   }, [numRows, numCols, speed]);
 
   //   Toggle simulation
-  const handleClickStart = () => {
+  const handleClickStart = (isSeeMoreButton) => {
     setRunning(!running);
     if (!running) {
       runningRef.current = true;
       runSimulation();
     } else {
       runningRef.current = false;
+    }
+    if (isSeeMoreButton) {
+      setShowSeeMoreButton(false);
     }
   };
 
@@ -351,7 +356,7 @@ const Grid = ({ numRows, numCols, gridViewWidthPercent }) => {
       <div className="grid-menu-container">
         <div className="grid-buttons-container">
           <GridButton
-            handleClick={handleClickStart}
+            handleClick={() => handleClickStart(false)}
             content={running ? 'Stop' : 'Start'}
           />
           <GridButton
@@ -376,11 +381,13 @@ const Grid = ({ numRows, numCols, gridViewWidthPercent }) => {
       <div className="welcome-button-container">
         <DelayLink
           // delay={5000}
-          onDelayStart={handleClickStart}
+          onDelayStart={() => handleClickStart(true)}
           to="about"
           className="link"
         >
-          <GridButton content="See more..." big />
+          <AnimatePresence>
+            {showSeeMoreButton && <GridButton content="See more..." big />}
+          </AnimatePresence>
         </DelayLink>
       </div>
     </div>
