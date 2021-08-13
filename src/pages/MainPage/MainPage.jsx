@@ -107,16 +107,22 @@ const MainPage = () => {
         <div className="about-me-card">
           <h1 className="about-me-header">About Me</h1>
           <p>
-            I grew up in the state of New York, which exposed me to the perfect
-            combination of nature and city life. Being especially drawn to the
-            nature half, I was drawn toward the life sciences. This lead to me
-            majoring in Microbiology at the University of Rochester. However, I
+            Drawn to nature and applied sciences from a young age, I was the
+            kind of kid who read nature encyclopedias front-to-back. I became
+            interested in health sciences as a teenager and began work as a
+            medical lab technician and EMT. Soon after, I decided to major in
+            Microbiology on a pre-med track at the University of Rochester.
+            However, I found the technical application of pure biology in the
+            lab lackluster, and I began to realize I no longer wanted to work as
+            a doctor with the changing landscape of the healthcare industry. I
             wanted to go beyond theory and apply my knowledge to the real world.
-            During my studies, I put my knowledge to work by working on an
-            ambulance and becoming a physical trainer. Then I discovered
-            computer science. It feels like everything I learn translates into
-            something I can do and I love it. {'\n'} When not programming, I
-            enjoy hiking, playing piano, and teaching my cat, Amadeus, tricks.
+            Then I discovered computer science. It felt like everything I
+            wanted: the ability to take conceptual ideas and engineer them
+            without significant time or financial investment. In the field of
+            software engineering, learning a skill directly translates into
+            something I can do -- and I love that about it. {'\n'} When not
+            programming, I enjoy hiking, playing piano, and teaching my cat,
+            Amadeus, tricks.
           </p>
         </div>
       </div>
