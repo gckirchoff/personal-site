@@ -7,6 +7,7 @@ import formalPortrait from '../../assets/gregory-picture-formal.jpeg';
 import bacterifind from '../../assets/bacterifind.png';
 import ecmanoteScreenshot from '../../assets/ecmanote-screenshot.png';
 import catChatScreenshot from '../../assets/cat-chat-screenshot.png';
+import resume from '../../assets/gregory-resume.pdf';
 import { ReactComponent as BlobSvg } from '../../assets/blob.svg';
 import { ReactComponent as EllipseSvg } from '../../assets/ellipse.svg';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
@@ -117,16 +118,6 @@ const MainPage = () => {
             something I can do and I love it. {'\n'} When not programming, I
             enjoy hiking, playing piano, and teaching my cat, Amadeus, tricks.
           </p>
-          <ul className="social-media">
-            <li>
-              <a href="https://github.com/gckirchoff">Github</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/gregory-kirchoff/">
-                Linkedin
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
       <div className="projects-section">
@@ -141,13 +132,28 @@ const MainPage = () => {
         <h1>Contact</h1>
         <h3 className="email">gckirchoff@gmail.com</h3>
         <div className="contact-links-container">
-          <a href="#">
+          <a
+            className="media-link"
+            href="https://www.linkedin.com/in/gregory-kirchoff/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin /> LinkedIn
           </a>
-          <a href="#">
+          <a
+            className="media-link"
+            href="https://github.com/gckirchoff"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub /> Github
           </a>
-          <a href="#">
+          <a
+            className="media-link"
+            href={resume}
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaFilePdf /> Resume
           </a>
         </div>
