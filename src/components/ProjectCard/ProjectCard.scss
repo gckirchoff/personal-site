@@ -1,0 +1,154 @@
+.margin-right-small {
+  margin-right: 1rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 0.5rem;
+}
+
+.project-card {
+  padding: 8rem 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  flex: 0 0 20%;
+  min-width: 200px;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  transition: transform 500ms ease;
+
+  &:hover,
+  &:focus-within {
+    transform: scale(1.05);
+  }
+
+  .card-content {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+      hsla(0, 0%, 0%, 0),
+      hsla(0, 0%, 0%, 0.5) 20%,
+      hsla(0, 0%, 0%, 1)
+    );
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // transform: translateY(64%); // Might need a calc() here
+    // transition: 500ms ease;
+
+    // & *:not(.project-title) {
+    //   opacity: 0;
+    //   transition: opacity 500ms linear;
+    // }
+
+    .project-title {
+      position: relative;
+      width: max-content;
+      margin-bottom: 1rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: calc(100% + var(--padding));
+        background-color: orchid;
+        left: calc(var(--padding) * -1);
+        bottom: -1px;
+        // transform: scaleX(0);
+        // transition: transform 500ms ease;
+        // transform-origin: left;
+      }
+    }
+
+    .project-description {
+      margin-bottom: 1rem;
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .project-link-button {
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      color: rgb(56, 56, 56);
+      background-color: orchid;
+      padding: 0.35em 0.8em;
+      border-radius: 0.2rem;
+
+      &:hover,
+      &:focus {
+        filter: brightness(1.1);
+      }
+    }
+  }
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  .project-title::after {
+    transform: scaleX(1);
+  }
+
+  .card-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+
+    & *:not(.project-title) {
+      opacity: 1;
+      transition-delay: 850ms;
+    }
+  }
+}
+
+.project-card:focus-within {
+  .card-content {
+    transition-duration: 0;
+
+    & *:not(.project-title) {
+      transition-delay: 0ms;
+      transition-duration: 0ms;
+    }
+  }
+}
+
+@media (hover) {
+  .project-card {
+    .card-content {
+      transform: translateY(calc(100% - 4.5rem)); // Might need a calc() here
+      transition: 500ms ease;
+
+      & *:not(.project-title) {
+        opacity: 0;
+        transition: opacity 500ms linear;
+      }
+    }
+  }
+  .project-title::after {
+    transform: scaleX(0);
+    transition: transform 500ms ease;
+    transform-origin: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
+}
+
+// .tech-used {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+
+// .project-image {
+//     img {
+//       width: 100%;
+//     }
+//   }
