@@ -52,7 +52,7 @@ const projects = [
     title: 'Cat Chat',
     image: catChatScreenshot,
     description:
-      'A MERN app created with the goal of helping scientists characterize, identify, and research Enterobacteriaceae and other gram negative, oxidase negative bacteria.',
+      "A MERNG stack social media app that only allows users to post pictures of cats. Binary classification neural network built using Keras and Tensorflow. User submitted photos stored in AWS' S3.",
     sourceCodeSiteName: ['Github', 'Github', 'Github'],
     sourceCodeSpecificty: [' Frontend', ' Backend', ' ML API'],
     sourceCodeLink: [
