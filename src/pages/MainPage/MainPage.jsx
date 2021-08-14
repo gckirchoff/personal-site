@@ -112,17 +112,15 @@ const MainPage = () => {
             interested in health sciences as a teenager and began work as a
             medical lab technician and EMT. Soon after, I decided to major in
             Microbiology on a pre-med track at the University of Rochester.
-            However, I found the technical application of pure biology in the
-            lab lackluster, and I began to realize I no longer wanted to work as
-            a doctor with the changing landscape of the healthcare industry. I
-            wanted to go beyond theory and apply my knowledge to the real world.
-            Then I discovered computer science. It felt like everything I
-            wanted: the ability to take conceptual ideas and engineer them
-            without significant time or financial investment. In the field of
-            software engineering, learning a skill directly translates into
-            something I can do -- and I love that about it. {'\n'} When not
-            programming, I enjoy hiking, playing piano, and teaching my cat,
-            Amadeus, tricks.
+            However, I found that my passion is bringing those scientific
+            concepts to life. I wanted to go beyond theory and apply my
+            knowledge to the real world. Then I discovered computer science. It
+            felt like everything I wanted: the ability to take conceptual ideas
+            and engineer them without significant time or financial investment.
+            In the field of software engineering, learning a skill directly
+            translates into something I can do -- and I love that about it.{' '}
+            {'\n'} When not programming, I enjoy hiking, playing piano, and
+            teaching my cat, Amadeus, tricks.
           </p>
         </div>
       </div>
@@ -169,3 +167,7 @@ const MainPage = () => {
 };
 
 export default MainPage;
+
+// I found the technical application of pure biology in the
+//             lab lackluster, and I began to realize I no longer wanted to work as
+//             a doctor with the changing landscape of the healthcare industry
