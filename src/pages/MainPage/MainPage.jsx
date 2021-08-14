@@ -114,10 +114,8 @@ const MainPage = () => {
             Microbiology on a pre-med track at the University of Rochester.
             However, I found that my passion is bringing those scientific
             concepts to life. I wanted to go beyond theory and apply my
-            knowledge to the real world. Then I discovered computer science. It
-            felt like everything I wanted: the ability to take conceptual ideas
-            and engineer them without significant time or financial investment.
-            In the field of software engineering, learning a skill directly
+            knowledge to the real world. Then I discovered computer science. In
+            the field of software engineering, learning a skill directly
             translates into something I can do -- and I love that about it.{' '}
             {'\n'} When not programming, I enjoy hiking, playing piano, and
             teaching my cat, Amadeus, tricks.
