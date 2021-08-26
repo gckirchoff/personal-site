@@ -386,7 +386,9 @@ const Grid = ({ numRows, numCols, gridViewWidthPercent }) => {
           className="link"
         >
           <AnimatePresence>
-            {showSeeMoreButton && <GridButton content="See more..." big />}
+            {showSeeMoreButton && (
+              <GridButton content="Continue to Portfolio" big />
+            )}
           </AnimatePresence>
         </DelayLink>
       </div>
