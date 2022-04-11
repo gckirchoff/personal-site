@@ -144,13 +144,14 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: stretch;
+  padding-bottom: 1.2rem;
 
   .projects-grid {
     width: 100%;
     padding: 0 2rem;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18.2rem, 1fr));
     grid-gap: 2rem;
 
     // display: flex;

@@ -20,14 +20,17 @@ const ProjectCard = ({
         <h2 className="project-title">{title}</h2>
         <p className="project-description">{description}</p>
         <div className="project-buttons-container">
-          <a
-            className="project-link-button margin-right-small"
-            href={siteUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Visit
-          </a>
+          {siteUrl && (
+            <a
+              className="project-link-button margin-right-small"
+              href={siteUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit
+            </a>
+          )}
+
           {sourceCodeLink.map((link, i) => (
             <a
               href={link}

@@ -7,6 +7,7 @@ import formalPortrait from '../../assets/gregory-picture-formal.jpeg';
 import bacterifind from '../../assets/bacterifind.png';
 import ecmanoteScreenshot from '../../assets/ecmanote-screenshot.png';
 import catChatScreenshot from '../../assets/cat-chat-screenshot.png';
+import dsLogo from '../../assets/ds.png';
 import resume from '../../assets/gregory-resume.pdf';
 import { ReactComponent as BlobSvg } from '../../assets/blob.svg';
 import { ReactComponent as EllipseSvg } from '../../assets/ellipse.svg';
@@ -62,6 +63,18 @@ const projects = [
     ],
     siteUrl: 'https://youthful-raman-950e3d.netlify.app/',
   },
+  {
+    title: 'ds',
+    image: dsLogo,
+    description:
+      "ds (short for data structures) is an easy to use, light weight library for implementing various generic data structures such as BSTs, tries, and linked lists in Golang.",
+    sourceCodeSiteName: ['Github'],
+    sourceCodeSpecificty: [' Source'],
+    sourceCodeLink: [
+      'https://github.com/gckirchoff/ds',
+    ],
+    siteUrl: '',
+  },
 ];
 
 const MainPage = () => {
@@ -110,15 +123,12 @@ const MainPage = () => {
             Drawn to nature and applied sciences from a young age, I was the
             kind of kid who read nature encyclopedias front-to-back. I became
             interested in health sciences as a teenager and began work as a
-            medical lab technician and EMT. Soon after, I decided to major in
+            medical lab technician, EMT, and physical trainer. Soon after, I decided to major in
             Microbiology on a pre-med track at the University of Rochester.
-            However, I found that my passion is bringing those scientific
-            concepts to life. I wanted to go beyond theory and apply my
-            knowledge to the real world. Then I discovered computer science. In
-            the field of software engineering, learning a skill directly
-            translates into something I can do -- and I love that about it.{' '}
-            {'\n'} When not programming, I enjoy hiking, playing piano, and
-            teaching my cat, Amadeus, tricks.
+            However, I found that my passion is using what I learn to innovate. I soon
+            discovered computer science, a field in which any new skill gathered
+            is a tool that can immediately be put to use. When not programming,
+            I enjoy hiking, playing piano, and teaching my cat, Amadeus, tricks.
           </p>
         </div>
       </div>
