@@ -27,6 +27,18 @@ const mainPageVariants = {
 
 const projects = [
   {
+    title: 'ds',
+    image: dsLogo,
+    description:
+      "ds (short for data structures) is an easy to use, light weight library for implementing various generic data structures such as BSTs, tries, and linked lists in Golang.",
+    sourceCodeSiteName: ['Github'],
+    sourceCodeSpecificty: [' Source'],
+    sourceCodeLink: [
+      'https://github.com/gckirchoff/ds',
+    ],
+    siteUrl: '',
+  },
+  {
     title: 'Bacterifind',
     image: bacterifind,
     description:
@@ -38,16 +50,6 @@ const projects = [
       'https://github.com/gckirchoff/bacterifind-backend',
     ],
     siteUrl: 'https://fast-temple-25827.herokuapp.com/',
-  },
-  {
-    title: 'Ecmanote',
-    image: ecmanoteScreenshot,
-    description:
-      'A locally hosted React app, served by a CLI. This app allows users to write markdown and compile Javascript that gets run live in the browser as you type, all while writing those changes to the file system. Great for studying data structures and algorithms.',
-    sourceCodeSiteName: ['Github'],
-    sourceCodeSpecificty: [' Source'],
-    sourceCodeLink: ['https://github.com/gckirchoff/ecmanote'],
-    siteUrl: 'https://www.npmjs.com/package/ecmanote',
   },
   {
     title: 'Cat Chat',
@@ -62,18 +64,6 @@ const projects = [
       'https://github.com/gckirchoff/cat-chat-flask-api',
     ],
     siteUrl: 'https://youthful-raman-950e3d.netlify.app/',
-  },
-  {
-    title: 'ds',
-    image: dsLogo,
-    description:
-      "ds (short for data structures) is an easy to use, light weight library for implementing various generic data structures such as BSTs, tries, and linked lists in Golang.",
-    sourceCodeSiteName: ['Github'],
-    sourceCodeSpecificty: [' Source'],
-    sourceCodeLink: [
-      'https://github.com/gckirchoff/ds',
-    ],
-    siteUrl: '',
   },
 ];
 
