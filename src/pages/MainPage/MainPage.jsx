@@ -91,7 +91,7 @@ const MainPage = () => {
         </div>
         <h1 className="name-header">Gregory Kirchoff</h1>
         <h3 className="sub-header">
-          Full stack developer with a good dose of microbiology and animal facts
+          Software developer with a good dose of microbiology and animal facts
         </h3>
         <div className="portrait">
           <img src={portrait} alt="Portrait of Gregory" />
