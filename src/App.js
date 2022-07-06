@@ -11,10 +11,10 @@ function App() {
     <div className="app">
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key}>
-          <Route exact path="/">
+          {/* <Route exact path="/">
             <WelcomePage />
-          </Route>
-          <Route route="about">
+          </Route> */}
+          <Route exact path="/">
             <MainPage />
           </Route>
         </Switch>
