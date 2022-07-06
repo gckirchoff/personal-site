@@ -15,6 +15,7 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaFilePdf } from 'react-icons/fa';
+import Grid from '../../components/Grid/Grid';
 
 const mainPageVariants = {
   hidden: {
@@ -30,12 +31,10 @@ const projects = [
     title: 'ds',
     image: dsLogo,
     description:
-      "ds (short for data structures) is an easy to use, light weight library for implementing various generic data structures such as BSTs, tries, and linked lists in Golang.",
+      'ds (short for data structures) is an easy to use, light weight library for implementing various generic data structures such as BSTs, tries, and linked lists in Golang.',
     sourceCodeSiteName: ['Github'],
     sourceCodeSpecificty: [' Source'],
-    sourceCodeLink: [
-      'https://github.com/gckirchoff/ds',
-    ],
+    sourceCodeLink: ['https://github.com/gckirchoff/ds'],
     siteUrl: '',
   },
   {
@@ -113,12 +112,13 @@ const MainPage = () => {
             Drawn to nature and applied sciences from a young age, I was the
             kind of kid who read nature encyclopedias front-to-back. I became
             interested in health sciences as a teenager and began work as a
-            medical lab technician, EMT, and physical trainer. Soon after, I decided to major in
-            Microbiology on a pre-med track at the University of Rochester.
-            However, I found that my passion is using what I learn to innovate. I soon
-            discovered computer science, a field in which any new skill gathered
-            is a tool that can immediately be put to use. When not programming,
-            I enjoy hiking, playing piano, and teaching my cat, Amadeus, tricks.
+            medical lab technician, EMT, and physical trainer. Soon after, I
+            decided to major in Microbiology on a pre-med track at the
+            University of Rochester. However, I found that my passion is using
+            what I learn to innovate. I soon discovered computer science, a
+            field in which any new skill gathered is a tool that can immediately
+            be put to use. When not programming, I enjoy hiking, playing piano,
+            and teaching my cat, Amadeus, tricks.
           </p>
         </div>
       </div>
@@ -160,12 +160,14 @@ const MainPage = () => {
           </a>
         </div>
       </footer>
+      <div style={{ marginTop: '30vh' }}>
+        {/* <p style={{ paddingLeft: '1.7%', margin: '20vh 0 25px 0' }}>
+          Thank you for visiting! Here's an interactive simulation of John Conway's Game of Life to play with.
+        </p> */}
+        <Grid numRows={25} numCols={80} gridViewWidthPercent={97.5} />
+      </div>
     </motion.div>
   );
 };
 
 export default MainPage;
-
-// I found the technical application of pure biology in the
-//             lab lackluster, and I began to realize I no longer wanted to work as
-//             a doctor with the changing landscape of the healthcare industry

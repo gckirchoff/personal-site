@@ -22,7 +22,7 @@ const operations = [
   [1, 1],
 ];
 
-const points = {
+const welcomePoints = {
   '6,4': true,
   '7,4': true,
   '8,4': true,
@@ -210,7 +210,210 @@ const points = {
   '9,77': true,
 };
 
-const Grid = ({ numRows, numCols, gridViewWidthPercent }) => {
+const thankYouGridPoints = {
+  // T
+  '6,1': true,
+  '6,2': true,
+  '6,3': true,
+  '6,4': true,
+  '6,5': true,
+  '6,6': true,
+  '6,7': true,
+  '6,8': true,
+  '6,9': true,
+  '7,5': true,
+  '8,5': true,
+  '9,5': true,
+  '10,5': true,
+  '11,5': true,
+  '12,5': true,
+  '13,5': true,
+  '14,5': true,
+  '15,5': true,
+  '16,5': true,
+  // h
+  '6,12': true,
+  '7,12': true,
+  '8,12': true,
+  '9,12': true,
+  '10,12': true,
+  '11,12': true,
+  '12,12': true,
+  '13,12': true,
+  '14,12': true,
+  '15,12': true,
+  '16,12': true,
+  '12,13': true,
+  '11,14': true,
+  '11,15': true,
+  '12,16': true,
+  '13,16': true,
+  '14,16': true,
+  '15,16': true,
+  '16,16': true,
+  // a
+  '12,19': true,
+  '13,19': true,
+  '14,19': true,
+  '15,19': true,
+  '11,20': true,
+  '11,21': true,
+  '11,22': true,
+  '12,23': true,
+  '13,23': true,
+  '14,23': true,
+  '15,23': true,
+  '16,20': true,
+  '16,21': true,
+  '16,22': true,
+  '16,23': true,
+  // n
+  '11,26': true,
+  '12,26': true,
+  '13,26': true,
+  '14,26': true,
+  '15,26': true,
+  '16,26': true,
+  '12,27': true,
+  '11,28': true,
+  '11,29': true,
+  '12,30': true,
+  '13,30': true,
+  '14,30': true,
+  '15,30': true,
+  '16,30': true,
+  // k
+  '6,33': true,
+  '7,33': true,
+  '8,33': true,
+  '9,33': true,
+  '10,33': true,
+  '11,33': true,
+  '12,33': true,
+  '13,33': true,
+  '14,33': true,
+  '15,33': true,
+  '16,33': true,
+  '13,34': true,
+  '12,35': true,
+  '11,36': true,
+  '10,37': true,
+  '14,35': true,
+  '15,36': true,
+  '16,37': true,
+  // Y
+  '6,40': true,
+  '7,41': true,
+  '8,42': true,
+  '9,43': true,
+  '10,44': true,
+  '9,45': true,
+  '8,46': true,
+  '7,47': true,
+  '6,48': true,
+  '11,44': true,
+  '12,44': true,
+  '13,44': true,
+  '14,44': true,
+  '15,44': true,
+  '16,44': true,
+  // o
+  '12,47': true,
+  '13,47': true,
+  '14,47': true,
+  '15,47': true,
+  '11,48': true,
+  '11,49': true,
+  '11,50': true,
+  '12,51': true,
+  '13,51': true,
+  '14,51': true,
+  '15,51': true,
+  '16,48': true,
+  '16,49': true,
+  '16,50': true,
+  // u
+  '11,54': true,
+  '12,54': true,
+  '13,54': true,
+  '14,54': true,
+  '15,54': true,
+  '16,55': true,
+  '16,56': true,
+  '16,57': true,
+  '11,58': true,
+  '12,58': true,
+  '13,58': true,
+  '14,58': true,
+  '15,58': true,
+  '16,59': true,
+
+  // cat
+  '9,61': true,
+  '9,62': true,
+  '11,62': true,
+  '6,63': true,
+  '8,63': true,
+  '9,63': true,
+  '10,63': true,
+  '5,64': true,
+  '11,64': true,
+  '15,64': true,
+  '6,65': true,
+  '8,65': true,
+  '12,65': true,
+  '13,65': true,
+  '14,65': true,
+  '16,65': true,
+  '10,66': true,
+  '12,66': true,
+  '15,66': true,
+  '6,67': true,
+  '8,67': true,
+  '12,67': true,
+  '16,67': true,
+  '5,68': true,
+  '11,68': true,
+  '15,68': true,
+  '6,69': true,
+  '8,69': true,
+  '9,69': true,
+  '10,69': true,
+  '11,69': true,
+  '15,69': true,
+  '9,70': true,
+  '11,70': true,
+  '15,70': true,
+  '16,70': true,
+  '9,71': true,
+  '11,71': true,
+  '14,71': true,
+  '16,71': true,
+  '11,72': true,
+  '16,72': true,
+  '11,73': true,
+  '14,73': true,
+  '15,73': true,
+  '12,74': true,
+  '15,74': true,
+  '7,75': true,
+  '11,75': true,
+  '13,75': true,
+  '14,75': true,
+  '4,76': true,
+  '6,76': true,
+  '8,76': true,
+  '10,76': true,
+  '5,77': true,
+  '9,77': true,
+};
+
+const Grid = ({
+  numRows,
+  numCols,
+  gridViewWidthPercent,
+  enableSeeMoreButton = false,
+}) => {
   // Create first grid with welcome
   const createFirstGrid = () => {
     const rows = [];
@@ -220,7 +423,7 @@ const Grid = ({ numRows, numCols, gridViewWidthPercent }) => {
 
     for (let i = 0; i < numRows; i++) {
       for (let j = 0; j < numCols; j++) {
-        if (`${i},${j}` in points) {
+        if (`${i},${j}` in thankYouGridPoints) {
           rows[i][j] = true;
         }
       }
@@ -257,10 +460,7 @@ const Grid = ({ numRows, numCols, gridViewWidthPercent }) => {
   const runningRef = useRef();
   runningRef.current = running;
 
-  //   Simulation
-  //   useCallback because I don't want funciton to be recreated on every render. Created only on first render.
   const runSimulation = useCallback(() => {
-    //   Because this function is not changing, running state will always be the same, so using a ref here.
     if (!runningRef.current) {
       return;
     }
@@ -386,7 +586,7 @@ const Grid = ({ numRows, numCols, gridViewWidthPercent }) => {
           className="link"
         >
           <AnimatePresence>
-            {showSeeMoreButton && (
+            {enableSeeMoreButton && showSeeMoreButton && (
               <GridButton content="Continue to Portfolio" big />
             )}
           </AnimatePresence>
