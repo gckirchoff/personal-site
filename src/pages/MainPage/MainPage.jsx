@@ -8,7 +8,7 @@ import bacterifind from '../../assets/bacterifind.png';
 import ecmanoteScreenshot from '../../assets/ecmanote-screenshot.png';
 import catChatScreenshot from '../../assets/cat-chat-screenshot.png';
 import dsLogo from '../../assets/ds.png';
-import resume from '../../assets/gregory-resume-05-17-2022.pdf';
+import resume from '../../assets/resume-07-11-2022.pdf';
 import { ReactComponent as BlobSvg } from '../../assets/blob.svg';
 import { ReactComponent as EllipseSvg } from '../../assets/ellipse.svg';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
