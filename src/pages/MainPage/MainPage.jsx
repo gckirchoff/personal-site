@@ -8,6 +8,7 @@ import bacterifind from '../../assets/bacterifind.png';
 import ecmanoteScreenshot from '../../assets/ecmanote-screenshot.png';
 import catChatScreenshot from '../../assets/cat-chat-screenshot.png';
 import dsLogo from '../../assets/ds.png';
+import waggleDance from '../../assets/waggledance.png';
 import resume from '../../assets/resume-07-11-2022.pdf';
 import { ReactComponent as BlobSvg } from '../../assets/blob.svg';
 import { ReactComponent as EllipseSvg } from '../../assets/ellipse.svg';
@@ -27,6 +28,16 @@ const mainPageVariants = {
 };
 
 const projects = [
+  {
+    title: 'Waggle Dance',
+    image: waggleDance,
+    description:
+      'A simulation of how returning honey bees communicate foraging locations to their hive.',
+    sourceCodeSiteName: ['Github'],
+    sourceCodeSpecificty: [' Source'],
+    sourceCodeLink: ['https://github.com/gckirchoff/bee-dance'],
+    siteUrl: 'https://waggledance.netlify.app/',
+  },
   {
     title: 'ds',
     image: dsLogo,
