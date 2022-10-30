@@ -39,16 +39,6 @@ const projects = [
     siteUrl: 'https://waggledance.netlify.app/',
   },
   {
-    title: 'ds',
-    image: dsLogo,
-    description:
-      'ds (short for data structures) is an easy to use, light weight library for implementing various generic data structures such as BSTs, tries, and linked lists in Golang.',
-    sourceCodeSiteName: ['Github'],
-    sourceCodeSpecificty: [' Source'],
-    sourceCodeLink: ['https://github.com/gckirchoff/ds'],
-    siteUrl: '',
-  },
-  {
     title: 'Bacterifind',
     image: bacterifind,
     description:
@@ -74,6 +64,16 @@ const projects = [
       'https://github.com/gckirchoff/cat-chat-flask-api',
     ],
     siteUrl: 'https://youthful-raman-950e3d.netlify.app/',
+  },
+  {
+    title: 'ds',
+    image: dsLogo,
+    description:
+      'ds (short for data structures) is an easy to use, light weight library for implementing various generic data structures such as BSTs, tries, and linked lists in Golang.',
+    sourceCodeSiteName: ['Github'],
+    sourceCodeSpecificty: [' Source'],
+    sourceCodeLink: ['https://github.com/gckirchoff/ds'],
+    siteUrl: '',
   },
 ];
 
